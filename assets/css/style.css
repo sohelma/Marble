@@ -1,0 +1,115 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap'); */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&family=PT+Sans:wght@400;700&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Roboto Condensed', sans-serif;
+    box-sizing: border-box; /* Border-box: padding use korle box boro hoi. Atake control kore. */
+    scroll-behavior: smooth;     /* about page a click korle smoothly scroll hobe. suddenly na*/
+}
+h1,h2,h3,h4,h5,h6{font-family: 'Roboto Condensed', sans-serif;}
+p{font-family: Roboto Condensed}
+/*------headline a oswald use so h ke dia upore only open sens p are jonn raklam------*/
+/*------BG on scroll start- for plug------------*/
+.navbar{padding: 13px 0px 13px;}
+.navbar{position: fixed; top: 0;
+    background:rgb(204, 204, 204);width: 100%; 
+   transition: .4s;z-index: 12;}
+    .bg_animation{animation: bgDown 0.4s ease-out;}
+    @keyframes bgDown {
+        from{transform: translateY(-100px);}
+        to{transform: translateY(0);}
+        
+    }    
+/* plugin preloader start*/
+.preloader{position: fixed;
+width: 100%;
+height: 100vh;
+background: lightgray;
+display: flex;justify-content: center;align-items: center;}
+
+.custom-loader {
+    --d:22px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    color: red;
+    box-shadow: 
+      calc(1*var(--d))      calc(0*var(--d))     0 0,
+      calc(0.707*var(--d))  calc(0.707*var(--d)) 0 1px,
+      calc(0*var(--d))      calc(1*var(--d))     0 2px,
+      calc(-0.707*var(--d)) calc(0.707*var(--d)) 0 3px,
+      calc(-1*var(--d))     calc(0*var(--d))     0 4px,
+      calc(-0.707*var(--d)) calc(-0.707*var(--d))0 5px,
+      calc(0*var(--d))      calc(-1*var(--d))    0 6px;
+    animation: s7 1s infinite steps(8);
+  }
+  
+  @keyframes s7 {
+    100% {transform: rotate(1turn)}
+  }
+/* plugin preloader end*/
+
+
+/*------Back to top button start-for plugin-------*/
+.back_to_top {position:fixed;bottom: 25px;right: 25px;
+   /*-- first time test then jq use korbo for condition--*/
+    animation:btt 0.4s ease-in ;
+    }
+/*------Back to top button end--------*/
+/*------first part start------*/
+.first{background:#dad9d9;
+width: 100%;
+height: auto;
+}
+/* --bs-navbar-padding-y: 15PX; */
+
+
+.navbar-expand-lg .navbar-collapse {
+    margin-right: 0;font-size: 14px;}
+.navbar-brand {font-size: 35px;font-weight: 600;
+}
+.nav-link {font-weight: 700;}
+.nav-link:hover {color: rgb(3, 172, 158);}
+/*------Hero part start------*/
+.hero_part{background: url(../img/Hero.png);
+background-repeat: no-repeat;
+background-size: cover;
+height: 600px; 
+}
+.btn{background:#3f8dbf;color: white;}
+.hero_part h2{margin-top: 215px;font-size: 40px;}
+.hero_part h3{font-size: 35px;}
+
+/*---------------------second part start--------------------*/
+
+.feature_icon li{font-size: 20px;}
+.second_con_icon {
+    list-style-type: none;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    align-items: center;
+}
+.underline{height: 2px;width: 100%;background: rgb(230, 227, 227);}
+/* .feature_icon li{border-radius: 50%;width: 5px;height: 5px;color: red;} */
+
+/*----------Latest work part start ------------*/
+.work_light{ color: rgb(206, 206, 206);}
+/*-----------Third part (quote)start --------------*/
+.third_img{font-size: 40px;color: gray;}
+.third_part {background: rgb(224, 221, 221);}
+.third_con p{color:gray;font-size: 18px; }
+/*------footer-link part start ------*/
+.foot_below ul li{list-style: none;font-size: 14px;}
+.foot_h h5{color: rgb(145, 144, 144);font-weight: 600;}
+.foot_con_main p{font-size: 14px;}
+.foot_con_main{color: rgb(202, 201, 201);}
+ul{padding-left: 0;}
+/*------footer part start ------*/
+
